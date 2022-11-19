@@ -1,0 +1,137 @@
+.header {
+    border-bottom: 1px solid var(--accent-line-color);
+  }
+  .header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    }
+  
+  
+  .logo__accent--header {
+    color: var(--logo-color);
+  }
+    /* Site nav */
+  .site-nav {
+    margin-left: 91px;
+  }
+  .nav__item {
+    display: flex;
+  }
+  
+  .link:not(:last-child) {
+    color: var(--title-text-color);
+    margin-right: 50px;
+    margin-bottom: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .link:hover ,
+  .link:focus {
+    color: var(--accent-color);
+  }
+  
+  .link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .bottom {
+    display: block;
+    content:" ";
+    margin-bottom: 32px;
+  }
+  
+  .under-link:after {
+    display: block;
+    content:" ";
+    height: 4px;
+    width: 100%;
+    border-radius: 4px;
+    border: var(--accent-color);
+    background-color: var(--accent-color);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-top: 28px;
+  }
+  
+  .curent {
+    color: var(--accent-color);
+  }
+  
+  .link-bottom {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;  
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;  
+    gap: 52px;
+  }
+  
+  .contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  
+  .auth-nav, .item__contact {
+    display: flex;
+  }
+  
+    .envelope {
+    fill: var(--primary-text-color);
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .smartphone {
+    fill: var(--primary-text-color);
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    } 
+  
+  .link__mail {
+    display: flex;
+    align-items: center;
+    margin-left: 315px;
+    margin-right: 30px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover .envelope,
+    &:focus .envelope {
+      fill:  var(--accent-color);
+    }
+  }
+  
+  .link__tel {
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover .smartphone,
+    &:focus .smartphone {
+      fill:  var(--accent-color);
+    }
+  }

@@ -1,0 +1,43 @@
+.activity {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 370px;
+    }
+    &__item:not(:nth-child(3n)) {
+        margin-right: 30px
+    }
+    &__item {
+        width: calc((100% - 60px) / 3);
+    }
+    &__wrap {
+        position: relative;
+        height: 100%;
+        top: -70px;
+        left: 0;
+        overflow: visible;
+    }
+    &-top-text {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        width: 370px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+        color: var(--primary-white-color);
+        padding-top: 27px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+}

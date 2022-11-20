@@ -1,21 +1,26 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    display: block;
     background-color: 
   rgba(245, 244, 250, 1);
     background-position: center;
-    & {
-        margin: 0 auto;
-    }
+    margin: 0 auto;
     &-cards {
         display: flex;
-        flex-wrap: wrap;
         gap: 30px;
+        @media screen and(min-width: 480px) {
+            width: calc(100% - 30px);  
+          }
+          @media screen and(min-width: 768px) {
+            width: calc((100% - 30px) / 2);  
+            }
+            @media screen and(min-width: 1200px) {
+                width: calc((100% - 90px) / 4);    
+            }
         }
 }
 
 .card {
-    width: 270px;
+    width: 100%;
     &__box {
         display: block;
     }

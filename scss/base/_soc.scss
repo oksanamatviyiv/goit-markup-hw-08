@@ -1,4 +1,5 @@
-.soc__lists {
+.soc {
+&__lists {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,7 +8,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        width: 100%;
+        width: 44px;
     }
     &__item {
         height: 20px;

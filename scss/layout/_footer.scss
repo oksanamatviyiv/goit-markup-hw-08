@@ -170,10 +170,18 @@ margin: 0;
   
   .footer-label {
     display: block;
-    width: 358px;
-    margin: 0 auto;
+    margin: 0;
     outline: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          @media screen and(min-width: 480px) {
+      width: 450px;
+        }
+                @media screen and(min-width: 768px) {
+      width: 358px;
+            }
+        @media screen and(min-width: 1200px) {
+      width: 358px;
+            }
   }
   
   .footer-button {

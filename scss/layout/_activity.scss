@@ -1,6 +1,13 @@
 .activity {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and(min-width: 480px) {
+    display: none;
+    }
+    @media screen and(min-width: 768px) {
+    display: none;
+    }
+    @media screen and(min-width: 1200px) {
+    display: block;
+    padding-top: 0;
     &__items {
         display: flex;
         flex-wrap: wrap;
@@ -40,4 +47,4 @@
         padding-left: auto;
         padding-right: auto;
     }
-}
+}}

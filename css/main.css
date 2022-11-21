@@ -1457,7 +1457,6 @@ section {
 }
 
 .portfolio {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -1467,16 +1466,52 @@ section {
 
 /* Buttons */
 .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .button-nav:not(:last-child) {
@@ -1513,8 +1548,20 @@ section {
   gap: 30px;
 }
 
-.project {
-  width: calc((100% - 60px) / 3);
+@media screen and (min-width: 480px) {
+  .project {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .project__link {
   display: block;
@@ -1727,8 +1774,6 @@ section {
   border-radius: 4px;
   padding: 40px;
   position: relative;
-  top: 50%;
-  left: 50%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transform: translate(-50%, -50%) scaleY(1) rotate(0);
           transform: translate(-50%, -50%) scaleY(1) rotate(0);
@@ -1736,6 +1781,27 @@ section {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    position: relative;
+    top: 33%;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
 }
 .modal__title {
   font-weight: 700;

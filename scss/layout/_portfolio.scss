@@ -1,5 +1,4 @@
 .portfolio {
-    padding-top: 94px;
     padding-bottom: 94px;
     }
     
@@ -9,10 +8,24 @@
     
     /* Buttons */
     .buttons {
+      margin-bottom: 50px;
+     @media screen and(min-width: 480px) {
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+               justify-content: flex-start;
+               align-items: center;
+        }
+     @media screen and(min-width: 768px) {
+                display:flex;
+      align-items: center;
+      justify-content: center;
+            }
+      @media screen and(min-width: 1200px) {
       display:flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 50px;
+            }
     }
     
     .button-nav:not(:last-child) {
@@ -43,7 +56,15 @@
       }
     
     .project {
-    width: calc((100% - 60px) / 3);
+       @media screen and(min-width: 480px) {
+            width: 100%; 
+        }
+        @media screen and(min-width: 768px) {
+            width: calc((100% - 30px) / 2); 
+            }
+            @media screen and(min-width: 1200px) {
+                width: calc((100% - 60px) / 3); 
+            }
 &__link {
         display: block;
         text-decoration: none;

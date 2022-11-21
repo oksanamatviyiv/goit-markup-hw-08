@@ -1,8 +1,4 @@
-.about {
-
-  }
-  
-  .benefits {
+.benefits {
     display: flex;
         @media screen and(min-width: 480px) {
         gap: calc((100% / 3) - 15px);

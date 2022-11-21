@@ -1,4 +1,6 @@
 .activity {
+    padding-top: 94px;
+    padding-bottom: 94px;
     &__items {
         display: flex;
         flex-wrap: wrap;
@@ -38,10 +40,4 @@
         padding-left: auto;
         padding-right: auto;
     }
-    @media screen and (min-width: 480px) {
-        width: 480px;  
-      }
-      @media screen and (min-width: 768px) {
-          width: 768px;  
-        }
 }

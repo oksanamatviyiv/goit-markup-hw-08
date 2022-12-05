@@ -8,7 +8,7 @@
     
     /* Buttons */
     .buttons {
-      margin-bottom: 50px;
+      margin-bottom: 35px;
      @media screen and(min-width: 480px) {
                 display:flex;
                 flex-wrap: wrap;
@@ -31,6 +31,11 @@
     .button-nav:not(:last-child) {
       margin-right: 8px;
     }
+    .button-nav {
+      @media screen and(min-width: 480px) {
+      margin-bottom: 15px;
+    }
+  }
     
     .primary-portfolio {
       color: var(--title-text-color);
